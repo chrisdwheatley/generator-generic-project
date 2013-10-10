@@ -39,7 +39,8 @@ GenericProjectGenerator.prototype.app = function app() {
   this.mkdir('src');
   this.mkdir('test');
 
-  this.template('_README.md', 'README.md')
+  this.template('_README.md', 'README.md');
+  this.template('_.gitignore', '.gitignore');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
