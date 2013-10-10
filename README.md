@@ -1,7 +1,6 @@
-# generator-generic-project [![Build Status](https://secure.travis-ci.org/swirlycheetah/generator-generic-project.png?branch=master)](https://travis-ci.org/swirlycheetah/generator-generic-project)
+# Generic Project Yeoman Generator
 
 A generator for [Yeoman](http://yeoman.io).
-
 
 ## Getting Started
 
