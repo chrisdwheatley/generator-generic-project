@@ -1,9 +1,19 @@
 {
   "name": "generator-generic-project",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "project-generator",
+    "github-generatory",
+    "generic-generator",
+    "generic-project-generator",
+    "generic-project",
+    "yeoman generator",
+    "github generator",
+    "generic project",
+    "generic generator",
+    "generic project generator"
   ],
   "homepage": "https://github.com/swirlycheetah/generator-generic-project",
   "bugs": "https://github.com/swirlycheetah/generator-generic-project/issues",
