@@ -23,22 +23,21 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
   console.log(this.yeoman);
 
   var prompts = [{
-    type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
-    default: true
+    name: 'projectName',
+    message: 'What would you like to name your project?'
   }];
 
   this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+    this.projectName = props.projectName;
 
     cb();
   }.bind(this));
 };
 
 GenericProjectGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('docs');
+  this.mkdir('src');
+  this.mkdir('test');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
