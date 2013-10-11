@@ -1,6 +1,6 @@
 {
   "name": "generator-generic-project",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A generic project generator for Yeoman",
   "keywords": [
     "yeoman-generator",
@@ -14,7 +14,7 @@
   "bugs": "https://github.com/swirlycheetah/generator-generic-project/issues",
   "author": {
     "name": "Chris Wheatley",
-    "email": "",
+    "email": "chriswheatley87@gmail.com",
     "url": "https://github.com/swirlycheetah"
   },
   "main": "app/index.js",
