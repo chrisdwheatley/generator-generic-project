@@ -4,7 +4,6 @@
 var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
-
 describe('generic-project generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
@@ -21,13 +20,16 @@ describe('generic-project generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // add files you expect to exist here.
+      'README.md',
+      '.gitignore',
+      'package.json',
+      'bower.json',
       '.jshintrc',
       '.editorconfig'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': true
+      'projectName': ['projectName']
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
