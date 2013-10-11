@@ -47,13 +47,12 @@ GenericProjectGenerator.prototype.app = function app() {
   this.mkdir('test');
 
   this.template('_README.md', 'README.md');
-  this.template('_.gitignore', '.gitignore');
-
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  this.template('_package.json', 'package.json');
+  this.template('_bower.json', 'bower.json');    
 };
 
 GenericProjectGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
+  this.copy('.gitignore', '.gitignore');
 };
