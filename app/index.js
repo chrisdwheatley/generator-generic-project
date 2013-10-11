@@ -22,13 +22,20 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
-  var prompts = [{
-    name: 'projectName',
-    message: 'What would you like to name your project?'
-  }];
+  var prompts = [
+    {
+      name: 'projectName',
+      message: 'What would you like to name your project?'
+    },
+    {      
+      name: 'projectDescription',
+      message: 'Add a project description (this can be amended at any time if required):', 
+    }
+  ];
 
   this.prompt(prompts, function (props) {
     this.projectName = props.projectName;
+    this.projectDescription = props.projectDescription;
 
     cb();
   }.bind(this));
