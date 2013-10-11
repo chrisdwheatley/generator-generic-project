@@ -1,27 +1,31 @@
-# Generic Project
+# Generic Project Generator
 
-### A [Yeoman](http://yeoman.io) Generator
+Generic Project Generator is a Yeoman generator built to create simple project structures perfect to push straight to Github.
 
-Generic Project creates a simple project structure perfect to push straight to Github.
+## Getting Started
 
-### Getting Started
-
-Install Yeoman globally:
+If you're new to Yeoman you'll need to install it globally to begin:
 
 ```
-$ npm install -g yo
+npm install -g yo
 ```
 
-To install generator-generic-project from npm, run:
+Then install generator-generic-project (this project):
 
 ```
-$ npm install -g generator-generic-project
+npm install -g generator-generic-project
 ```
 
-Finally, initiate the generator:
+Make a new directory, and cd into it:
 
 ```
-$ yo generic-project
+mkdir my-new-project && cd $_
+```
+
+Run yo generic-project to get started:
+
+```
+yo generic-project
 ```
 
 ### License
