@@ -30,12 +30,19 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
     {      
       name: 'projectDescription',
       message: 'Add a project description (this can be amended at any time if required):', 
+    },
+    {
+      type: 'confirm',
+      name: 'addChildFolder',
+      message: 'Would you like to add any subfolders right now?',
+      default: false
     }
   ];
 
   this.prompt(prompts, function (props) {
     this.projectName = props.projectName;
     this.projectDescription = props.projectDescription;
+    this.addChildFolder = props.addChildFolder;
 
     cb();
   }.bind(this));
