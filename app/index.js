@@ -21,6 +21,8 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
 
   // have Yeoman greet the user.
   console.log(this.yeoman);
+  console.log('This generator will scaffold and wire a basic project structure.' +
+    '\nJust tell me a few details to get started.\n');
 
   var prompts = [
     {
@@ -36,7 +38,7 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
       name: 'addChildFolder',
       message: 'Would you like to add any subfolders right now?',
       default: false
-    }
+    }  
   ];
 
   this.prompt(prompts, function (props) {
