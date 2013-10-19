@@ -1,6 +1,7 @@
 'use strict';
 var util = require('util');
 var path = require('path');
+var chalk = require('chalk');
 var yeoman = require('yeoman-generator');
 
 
@@ -21,6 +22,8 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
 
   // have Yeoman greet the user.
   console.log(this.yeoman);
+  console.log(chalk.cyan.bold('This generator will scaffold and wire a basic project structure.') +
+    chalk.cyan('\nJust tell me a few details to get started.\n'));
 
   var prompts = [
     {
