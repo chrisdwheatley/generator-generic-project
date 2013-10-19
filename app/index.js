@@ -39,7 +39,7 @@ GenericProjectGenerator.prototype.askFor = function askFor() {
       name: 'addChildFolder',
       message: 'Would you like to add any subfolders right now?',
       default: false
-    }  
+    }
   ];
 
   this.prompt(prompts, function (props) {
