@@ -2,6 +2,18 @@
 
 Generic Project Generator is a Yeoman generator built to create simple project structures perfect to push straight to Github.
 
+The structure you'll end up with is:
+
+```
+project root
+  |- docs
+  |- src
+  |- test
+  |- bower.json
+  |- package.json
+  |- README.md
+```
+
 ## Getting Started
 
 If you're new to Yeoman you'll need to install it globally to begin:
